@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+</body>
+<!-- main converter's code -->
+<script src="./xml2json.js"></script>
+<script>
+	//  convert XML response data to JSON
+	function xml2jsonConverter(xmlData) {
+		var xml2json = new X2JS();
+		var json = xml2json.xml_str2json(xmlData);
+		console.log(json);
+	}
+</script>
+
+</html>
