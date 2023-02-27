@@ -1,0 +1,175 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // this changes are made by SUJIT ROY
+    // vscode-keybindings for navigation with I/J/K/L and additional functionality with surrounding characters 
+    // Place your key bindings in this file to overwrite the defaults
+    // ALT + I/J/K/L: up/left/down/right
+    // ALT + SHIFT + I/J/K/L: mark text up/left/down/right
+    // cmd + J/L: send cursor to start/end of line
+    // cmd + ALT + J/L: send cursor to start/end of word
+    // cmd + ALT + U/O: send cursor to "wordPartLeft"/"wordPartRight"
+    // cmd + ALT +  SHIFT + U/O: mark from cursor to "wordPartLeft"/"wordPartRight"
+    // cmd + ALT + Y: got to declaration
+    // cmd + I/K: add/remove another cursor up/down
+    // -- IF LINEJUMPER IS INSTALLED -- //
+    // cmd + ALT + I/K: move cursor 10 lines up/down
+    // cmd + ALT + SHIFT + I/K: mark 10 lines up/down
+    {
+        "key": "cmd+shift+i",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+shift+k",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+i",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },{
+        "key": "alt+i",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+k",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+i",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+l",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+j",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+l",
+        "command": "cursorWordEndRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+j",
+        "command": "cursorWordStartLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+cmd+l",
+        "command": "cursorWordRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+cmd+j",
+        "command": "cursorWordLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+o",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+u",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+alt+y",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "cmd+i",
+        "command": "cursorColumnSelectUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "cursorColumnSelectDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+cmd+o",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+shift+cmd+u",
+        "command": "cursorWordPartLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+cmd+u",
+        "command": "cursorWordPartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+cmd+k",
+        "command": "lineJumper.moveDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+i",
+        "command": "lineJumper.moveUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+cmd+k",
+        "command": "lineJumper.selectDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+cmd+i",
+        "command": "lineJumper.selectUp",
+        "when": "editorTextFocus"
+    }
+]
